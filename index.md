@@ -1,17 +1,16 @@
 # Introduction to single-cell RNA-seq data analysis
 
-### 12th, 19th, 26th February 2025 || 09:30 - 17:00
-#### Online via Zoom
+### 10th, 11th, 14th July 2025 || 09:30 - 17:00
+#### In-person, Craik-Marshall training room ([map](https://www.google.co.uk/maps?hl=en-GB&q=Craik-Marshall+Building,+Downing+Site,+Cambridge&source=calendar))
 
 ![](UnivCambridge_ScRnaSeqIntro_Base/Images/uniOfCamCrukLogos.png)
 
 ## Instructors
 
 - Abbi Edwards (CRUK)
-- Betty Wang (Clinical Neurosciences)
 - Chandra Chilamakuri (CRUK)
-- Jiayin Hong (Sanger Institute)
-- Erin Doody (Sainsbury Laboratory)
+- Ramy Ragheb (Stem Cell Institute)
+- Daianna Gonzales Padilla (Sanger)
 - Guest Speaker: Kasia Kania (Cosyne Therapeutics)
 
 ## Outline
@@ -58,14 +57,14 @@ of gene expression data, such as TSNE, UMAP and violin plots.
 * 09:30 - 09:45 **Welcome** - Hugo
 * 09:45 - 10:30 **Introduction to Single Cell Technologies** - Katarzyna Kania
     + [Slides](UnivCambridge_ScRnaSeqIntro_Base/Slides/01_Introduction.pdf)
-* 10:30 - 10:44 **Preamble**: data set and workflow - Chandra
+* 10:30 - 10:44 **Preamble**: data set and workflow - Abbi
     + [Slides](UnivCambridge_ScRnaSeqIntro_Base/Slides/02_PreambleSlides.html)
 * 10:45 - 11:00 - **Break**
-* 11:00 - 12:30 Library structure, **cellranger** for alignment and cell calling - Chandra
+* 11:00 - 12:30 Library structure, **cellranger** for alignment and cell calling - Abbi
     + [Slides](UnivCambridge_ScRnaSeqIntro_Base/Slides/03_CellRangerSlides.html) \([pdf](UnivCambridge_ScRnaSeqIntro_Base/Slides/03_CellRangerSlides.pdf)\)
     + [Demonstration](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/03_CellRanger.html)
 * 12:30 - 13:30 **Lunch break**
-* 13:30 - 17:00 **QC and exploratory analysis** - Erin
+* 13:30 - 17:00 **QC and exploratory analysis** - Chandra
     + [Slides](UnivCambridge_ScRnaSeqIntro_Base/Slides/04_QualityControlSlides.html) \([pdf](UnivCambridge_ScRnaSeqIntro_Base/Slides/04_QualityControlSlides.pdf)\)
     + [Demonstration](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/04_Preprocessing_And_QC.html)
         <!-- + [Demo live script](live_scripts/04_demonstration_live_script.R) -->
@@ -82,7 +81,7 @@ of gene expression data, such as TSNE, UMAP and violin plots.
     + [Demonstration](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/05_Normalisation.html)    
     + [Practical](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/05_Normalisation_exercises.html)
 * 12:30 - 13:30 **lunch break**
-* 13:30 - 15:25 **Feature selection and dimensionality reduction** - Jiayin
+* 13:30 - 15:25 **Feature selection and dimensionality reduction** - Ramy
     + [Slides](UnivCambridge_ScRnaSeqIntro_Base/Slides/06_FeatureSelectionAndDimensionalityReduction_slides.html) \([pdf](UnivCambridge_ScRnaSeqIntro_Base/Slides/06_FeatureSelectionAndDimensionalityReduction_slides.pdf)\)
     + [Demonstration](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/06_FeatureSelectionAndDimensionalityReduction.html)
 * 15:25 - 15:35 10 min **break**
@@ -97,11 +96,11 @@ of gene expression data, such as TSNE, UMAP and violin plots.
     + [Slides](UnivCambridge_ScRnaSeqIntro_Base/Slides/08_ClusteringSlides.html)
     + [Demonstration](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/08_Clustering.html)
 * 11:05 - 11:15 10 min **break**
-* 11:15 - 12:30 **Identification of cluster marker genes** - Betty
+* 11:15 - 12:30 **Identification of cluster marker genes** - Ramy
     + [Slides](UnivCambridge_ScRnaSeqIntro_Base/Slides/09_ClusterMarkerGenes.html)
     + [Demonstration](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/09_Cluster_Marker_Genes.html)
 * 12:30 - 13:30 **lunch break**
-* 13:30 - 17.30 **Differential Expression and Abundance Analysis** - Chandra (DE) & Abbi (DA)
+* 13:30 - 17.30 **Differential Expression and Abundance Analysis** - Chandra
     + [Slides](UnivCambridge_ScRnaSeqIntro_Base/Slides/10_DifferentialExpressionAndAbundance.pdf) 
     + [Demonstration - Differential Expression](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/10_Differential_Expression.html)
     + [Demonstration - Differential Abundance](UnivCambridge_ScRnaSeqIntro_Base/Markdowns/11_Differential_Abundance.html)
@@ -125,7 +124,7 @@ However, if you want to run the analysis on your own computer, you can follow th
 * Open RStudio and run the following commands from the console:
     ```r
     install.packages("BiocManager")
-    BiocManager::install(c("AnnotationHub", "BiocParallel", "BiocSingular", "DropletUtils", "PCAtools", "batchelor", "bluster", "cluster", "clustree", "dynamicTreeCut", "edgeR", "ensembldb", "ggplot2", "igraph", "patchwork", "pheatmap", "scater", "scran", "tidyverse"))
+    BiocManager::install(c("AnnotationHub", "BiocParallel", "BiocSingular", "DropletUtils", "PCAtools", "batchelor", "bluster", "cluster", "clustree", "dynamicTreeCut", "edgeR", "ensembldb", "ggplot2", "igraph", "patchwork", "pheatmap", "scater", "scran", "tidyverse", "miloR"))
     ```
 
 For Cellranger, you will need to use a Linux machine.
